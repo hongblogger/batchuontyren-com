@@ -1,0 +1,44 @@
+/* CSS Post Wrapper */
+.post {background:#fff;color:#333;margin:0 0 20px 0;padding:0 10px 0 0;border:none;box-shadow:0 0 0 1px #eee;transition:all 0.3s linear;}
+.post:hover {box-shadow:0 0 0 1px #d6d6d6;transition:.3s linear;}
+.post-body {line-height:1.6em;color:#333;margin-right:10px;font-size:12px;text-overflow:ellipsis;}
+h2.post-title, h1.post-title {font-family:&#39;Open Sans&#39;,sans-serif;font-size:18px;font-weight:700;padding:15px 0;text-transform:none;padding-bottom:0;text-align:left;border-bottom:none;border-top:none;clear:initial;}
+h2.post-title:hover, h1.post-title:hover {color:#f56954;}
+h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {color:#333;z-index:0;}
+h2.post-title a:hover, h1.post-title a:hover {color:#f56954!important;}
+.post-info {margin-top:0;margin-bottom:0;padding:0;margin-right:15px;margin-left:15px;color:#333;font-size:11px;}
+.post-info a {display:inline;background:transparent;color:#333;padding:5px;padding-left:0;margin-bottom:10px;transition:all .3s ease-out;}
+.post-info a:hover {background:transparent;color:#f56954;}
+.author-info, .review-info, .comment-info, .time-info {margin-right:8px;display:inline;}
+.img-thumbnail {overflow:hidden;background:#444;position:relative;float:left;width:260px;height:170px;margin:20px;z-index:1;padding:0;}
+.img-thumbnail img {width:260px;height:170px;}
+
+/* CSS Label Info */
+.post .label-info {position:absolute;top:20px;left:20px;margin:0 auto;width:auto;z-index:1;}
+.label-info a{font-weight:700;background:rgba(0,0,0,0.3);color:rgba(255,255,255,0.8);font-size:13px;display:block;float:left;padding:6px 12px;margin:0;transition: all .3s ease-out;}
+.label-info a:hover{background:rgba(0,0,0,0.6);color:#fff;}
+.label-info a:nth-child(n+2){display:none;}
+
+/* CSS Read More */
+a.read-more {position:absolute;display:inline-block;bottom:20px;background-color:#aaa;color:#fff;padding:5px 10px 4px;font-family:&#39;Open Sans&#39;;font-size:11px;font-weight:700;text-transform:uppercase;border-radius:2px;transition:all .3s ease-out;}
+a.read-more:hover,a.read-more:active {background-color:#888;color:#fff;}
+a.read-more:after {content:&#39;\f0da&#39;;font-family:Fontawesome;font-weight:normal;text-align:center;margin-left:5px;display:inline-block;transition:all .3s ease-out;}
+a.read-more:hover:after {content:&#39;\f178&#39;;}
+
+/* CSS Homepage Responsive */
+@media only screen and (max-width:640px){
+#content-wrapper {padding:0;}
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:18px;margin:20px 0;clear:both;}
+.post {padding:15px;}
+.post-body {margin-bottom:10px;}
+a.read-more,.readm,.label-info {display:none;}
+.img-thumbnail {width:100%;height:auto;margin:0;}
+.img-thumbnail img {width:100%;height:auto;}
+.post-body,.comment-info{visibility:hidden;}}
+
+@media only screen and (max-width:480px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:16px;}
+.post-body, .comment-info {display:none!important;visibility:hidden;width:0;height:0;}}
+
+@media only screen and (max-width:320px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:14px;}}
